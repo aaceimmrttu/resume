@@ -12,6 +12,7 @@
 
 \documentclass[localFont,alternative,10pt,compact]{yaac-another-awesome-cv}
 \usepackage{biblatex}
+\usepackage{amsmath}
 
 \name{Matthew}{Maurice}
 %\photo{2.4cm}{me2}
@@ -32,17 +33,36 @@
 
 % Uncomment to add the bibliography (see section_publications.tex)
 %\addbibresource{my_publications.bib}
+%\begin{cover}
+%	\ {Dear Hiring Manager,
+%
+%	I am excited to apply for the DevSecOps position at your organization. With extensive experience in systems engineering, site reliability, and security, I am confident in my ability to effectively manage multiple responsibilities and collaborate with cross-functional teams to meet project goals.
+%
+%	In my current role as a DevOps Engineer at C2IMERA, I have successfully implemented an API gateway rollout strategy to enable secure communication between microservices and migrated over 1200 locally run tests onto AWS, significantly improving software development efficiency. I have also proactively collaborated with security teams to implement and maintain best practices for securing cloud-based infrastructure and applications, including multi-factor authentication and encryption protocols.
+%
+%	As a Life Long Learner and Eagle Scout, I am constantly seeking new challenges and opportunities for growth. I am proficient in various programming languages, development tools, database technologies, operating systems, and cloud technologies, including Java, Python, C, C++, HTML, CSS, Javascript, Oracle Database, Microsoft SQL Server, Windows Server 2003/2008, AWS S3, EC2, CloudFormation, and Terraform.
+%
+%	At AIMES, Leidos Inc. and Insite, Crown Equipment, I developed a comprehensive DevOps framework, setup and managed a private PKI signing service, designed and established a centralized repository structure using Artifactory and Nexus, and created and maintained fully automated CI/CD pipelines for code deployment using Docker, Jenkins, AWS, and Vsphere.
+%
+%	I hold several certifications, including CompTIA A+, CompTIA Network+, CompTIA Security+, and AWS SysOps, and am experienced in designing and executing end-to-end build and deployment strategies for Git branches.
+%
+%	Thank you for considering my application. I look forward to discussing how I can contribute to your team.
+%
+%	Sincerely,
+%	Matthew Maurice}
+%\end{cover}
+
 
 \begin{document}
 
 	\makecvheader
 
 	\makecvfooter
-	{\textsc{\today}} % \selectlanguage{english}\today
+	{\textsc{\selectlanguage{english}\today}} %
 	{\textsc{Matthew Maurice - CV}}
 	{\thepage}
 
-	\input{section_headline_archi}
+	%\input{section_headline_archi}
 	\input{section_competences}				% Section compétence
 	\input{section_experience_short}		% Section expérience
 %	\input{section_langues}					% Section langues
