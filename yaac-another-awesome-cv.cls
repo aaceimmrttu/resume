@@ -19,15 +19,15 @@
 
 \ProvidesClass{yaac-another-awesome-cv}[2020/03/24  v2.3.1 'YAAC: Another Awesome CV' Class]
 
-\def\@@ptsize{10pt}
+\def\@@ptsize{8pt}
 
+\DeclareOption{8pt}{\def\@@ptsize{8pt}}
+\DeclareOption{9pt}{\def\@@ptsize{9pt}}
 \DeclareOption{10pt}{\def\@@ptsize{10pt}}
-\DeclareOption{11pt}{\def\@@ptsize{11pt}}
-\DeclareOption{12pt}{\def\@@ptsize{12pt}}
 
 \ProcessOptions\relax
 
-\LoadClass[a4paper,\@@ptsize]{article}
+\LoadClass[letterpaper,\@@ptsize]{article}
 
 \newif\if@showLinks   \@showLinksfalse
 \newif\if@isCompact   \@isCompactfalse
@@ -440,8 +440,8 @@
 %                    }
 %                    {<Technology list>}
 \newcommand\experience[7]{
-  \textbf{#1}    & \textbf{#2, \textsc{#3}, #4}   								\\*
-  \textbf{#5}    & \begin{minipage}[t]{\rightcolumnlength}
+\textbf{#1}    & \textbf{#2, \textsc{#3}, #4}   						\\*
+\textbf{#5}    & \begin{minipage}[t]{\rightcolumnlength}
   					         #6
                    \end{minipage}										\\*
                  & \footnotesize{\foreach \n in {#7}{\cvtag{\n}}} 	\\
